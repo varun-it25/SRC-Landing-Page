@@ -8,8 +8,8 @@ const AboutSection = () => {
     <section className="pt-10 sm:pt-12 pb-8 sm:pb-12">
         <div className="w-full px-4 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-12">
 
-          <div className="w-full border relative flex flex-col justify-between items-center bg-red-600 rounded-lg">
-            <div className="text-white text-lg p-4 sm:p-8 w-full">
+          <div className="w-full border relative flex flex-col justify-between items-center bg-blue-600 rounded-lg">
+            <div className="text-white text-lg p-6 sm:p-8 w-full">
               <p className="text-[1.7rem] sm:text-3xl font-semibold pb-12 whitespace-nowrap">Contact Information</p>
               
               <div className="flex space-x-3 items-center pb-6">
@@ -27,13 +27,13 @@ const AboutSection = () => {
             </div>
 
             <div className="px-6 pb-6 flex items-center w-full space-x-4">
-              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-red-500 hover:bg-white text-white hover:text-red-500 cursor-pointer">
+              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
                 <Instagram size={20} />
               </div>
-              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-red-500 hover:bg-white text-white hover:text-red-500 cursor-pointer">
+              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
                 <Facebook size={18} />
               </div>
-              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-red-500 hover:bg-white text-white hover:text-red-500 cursor-pointer">
+              <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
                 <Linkedin size={18} />
               </div>
             </div>
