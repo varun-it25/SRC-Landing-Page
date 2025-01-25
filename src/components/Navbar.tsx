@@ -42,9 +42,7 @@ const Navbar = () => {
       <div className="flex-1 hidden sm:flex justify-center items-center text-sm space-x-4">
         {menuItems.slice(0, 4).map((item) => (
           <Link key={item.name} to={item.path} className="font-medium">
-            <div
-              className={`pb-[0.2rem] ${isActive(item.path) ? "border-b-2 border-blue-600" : ""} font-semibold px-2`}
-            >
+            <div className={`pb-[0.2rem] ${isActive(item.path) ? "border-b-2 border-blue-600" : ""} font-semibold px-2`}>
               {item.name}
             </div>
           </Link>
@@ -53,9 +51,7 @@ const Navbar = () => {
 
       {/* Upcoming Events Button */}
       <Link to={`/upcoming-events`}>
-      <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">
-        Upcoming Events
-      </Button>
+        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Upcoming Events</Button>
       </Link>
 
       {/* Hamburger */}
