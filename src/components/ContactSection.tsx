@@ -1,22 +1,63 @@
 import { Button } from "./ui/button"
+import { Input } from "./ui/input"
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, SendHorizonal } from "lucide-react"
+import { Textarea } from "./ui/textarea"
 
 const AboutSection = () => {
   return (
-    <main className="container mx-auto py-4 sm:py-10 bg-blue-50">
-      <p className="text-center font-semibold text-3xl mb-12">Contact<span className="text-blue-600 pl-2">US</span></p>
-      <div className="flex flex-col-reverse sm:grid grid-cols-1 sm:grid-cols-2 px-6 sm:px-40 gap-8 sm:gap-12 items-center">
-          <div className="relative aspect-square rounded-xl border p-6 overflow-hidden shadow-xl">
-              <img src="https://png.pngtree.com/png-vector/20240805/ourmid/pngtree-cheerful-people-singing-png-image_13083494.png" alt="Group yoga class" className="w-full h-full object-cover rounded-xl" />
+    <section className="pt-10 sm:pt-12 pb-8 sm:pb-20">
+        <p className='text-3xl mb-10 sm:mb-14 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-blue-600 text-center'>Contact <span className='font text-zinc-600'>Us</span></p>
+        <div className="w-full px-8 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-12">
+
+          <div className="w-full border relative flex flex-col justify-between items-center bg-blue-600 rounded-lg">
+            <div className="text-white text-lg p-8 w-full">
+              <p className="text-[1.7rem] sm:text-3xl font-semibold pb-12 whitespace-nowrap">Contact Information</p>
+              
+              <div className="flex space-x-3 items-center pb-6">
+                <Phone size={20} />
+                <p>+91 9257307752</p>
+              </div>
+              <div className="flex space-x-4 items-center pb-6">
+                <Mail size={20} />
+                <p>src@jecrc.ac.in</p>
+              </div>
+              <div className="flex space-x-4 items-center pb-5">
+                <MapPin size={20} />
+                <p>Near Bh-1, JECRC</p>
+              </div>
+            </div>
+
+            <div className="px-6 pb-6 flex items-center w-full space-x-4">
+              <div className="w-[2.4rem] h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-black cursor-pointer">
+                <Instagram size={20} />
+              </div>
+              <div className="w-[2.4rem] h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-black cursor-pointer">
+                <Facebook size={18} />
+              </div>
+              <div className="w-[2.4rem] h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-black cursor-pointer">
+                <Linkedin size={18} />
+              </div>
+            </div>
           </div>
-        <div className="w-full font-medium">
-          <p className="mb-5">The Spiritual Research Cell (SRC) at Jaipur Engineering College and Research Centre (JECRC) promotes spiritual awareness, mental well-being, and personal growth.</p>
-          <p className="mb-5">By combining academic learning with spiritual development, SRC offers activities like meditation, yoga workshops, motivational talks, and discussions on self-awareness, stress management, and life goals.</p>
-          <p className="mb-5">Our aim is to help students balance academic pressures with inner peace, fostering leadership, emotional intelligence, and resilience.</p>
-          <p className="mb-7">Join us on a journey of holistic development, where intellectual growth meets spiritual enlightenment.</p>
-          <Button className="px-8">About US</Button>
+
+          <div className="w-full px-2 sm:px-0 pt-8 sm:pt-0 py-2">
+            <p className="mb-4 font-semibold text-xl">Any Query? Write your message here!</p>
+            <div className="space-y-1 mb-4">
+              <p className="font-semibold text-zinc-600 text-xs">Name</p>
+              <Input placeholder="Write your name here" />
+            </div>
+            <div className="space-y-1 mb-4">
+              <p className="font-semibold text-zinc-600 text-xs">Email</p>
+              <Input placeholder="Write your email here" />
+            </div>
+            <div className="space-y-1 mb-5">
+              <p className="font-semibold text-zinc-600 text-xs">Message</p>
+              <Textarea rows={4} placeholder="Write your message here" />
+            </div>
+            <Button className="bg-zinc-800"><SendHorizonal /> Send Message</Button>
+          </div>
         </div>
-      </div>
-    </main>
+    </section>
   )
 }
 

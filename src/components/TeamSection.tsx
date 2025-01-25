@@ -1,66 +1,25 @@
+import { memberData } from "@/data/members"
+
 const TeamSection = () => {
   return (
-    <main className="container mx-auto py-4 sm:py-12">
-      <p className="text-center font-semibold text-3xl mb-12">Our<span className="text-blue-600 pl-2">Team</span></p>
-      <div className="w-full grid-cols-1 sm:grid-cols-4 grid gap-12 px-7 sm:px-40">          
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-          <div className='border bg-white rounded-md flex w-full flex-col justify-center items-center p-6 shadow-lg'>
-              <div className='w-20 h-20 rounded-full border'>
-                  <img src={`https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=`} className='w-full h-full rounded-full object-cover' />
-              </div>
-              <p className='font-bold text-xl mt-3 text-zinc-800'>Varun kangotra</p>
-              <p className='text-zinc-400 text-sm font-semibold mt-1'>Graphic Designer</p>
-          </div>
-      </div>
-    </main>
+    <section className="pt-12 pb-12 sm:pb-20 bg-blue-50">
+        <p className='text-3xl mb-6 sm:mb-12 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>Our <span className='font text-blue-600'>Team</span></p>
+        <div className="w-full px-8 sm:px-28 grid grid-cols-1 sm:grid-cols-4 gap-0 sm:gap-12">
+            {
+                memberData.map(({memberId, name, desination, image }) => {
+                    return (
+                        <div key={memberId} className="w-full mb-10 h-full flex flex-col justify-center items-center">
+                            <img className="w-full rounded-lg aspect-square" src={image} />
+                            <div className="px-4 py-2 bg-white rounded mt-[-4.1rem] w-11/12">
+                                <p className="font-medium text-sm">{name}</p>
+                                <p className="font-medium text-zinc-500 text-sm">{desination}</p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    </section>
   )
 }
 
