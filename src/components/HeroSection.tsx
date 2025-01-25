@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 import Banner_Image from '@/assets/Banner_Image.png'
 
@@ -10,8 +11,8 @@ const HeroSection = () => {
         <p className='text-zinc-400 text-center xt-start text-sm mb-8'>Join Spiritual Research Cell to discover the power of mindfulness and inner peace. Transform your life and self-discovery.</p>
 
         <div className='flex justify-center fy-start space-x-5 w-full'>
-          <Button>Upcoming Events</Button>
-          <Button variant={`outline`}>Learn More</Button>
+          <Link to={`/upcoming-events`}><Button>Upcoming Events</Button></Link>
+          <Link to={`/about`}><Button variant={`outline`}>About Us</Button></Link>
         </div>
       </div>
       <div className='w-full mb-4 sm:mb-0'>

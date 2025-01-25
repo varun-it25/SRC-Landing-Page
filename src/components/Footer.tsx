@@ -7,7 +7,7 @@ const Footer = () => {
 
       <p className='text-center text-zinc-600 whitespace-nowrap text-sm sm:text-base ml-[-1rem] sm:ml-0'>©2025 All right reserved. <span className='font-semibold text-zinc-500'>Spiritual Research Cell</span></p>
 
-      <div className='flex justify-center items-center space-x-4 pr-0 sm:pr-8'>
+      <div className='flex justify-center items-center space-x-3 pr-0 sm:pr-8'>
         <div className="w-[2.4rem] h-[2.4rem] flex justify-center items-center rounded-full hover:bg-white text-white hover:text-black cursor-pointer">
           <Instagram size={20} />
         </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path
 
   return (
-    <div className="py-3 border-b-2 z-10 sm:px-8 px-6 flex w-full justify-between items-center space-x-7">
+    <div className="py-3 top-0 sticky bg-white border-b-2 z-10 sm:px-8 px-6 flex w-full justify-between items-center space-x-7">
       {/* Logo */}
       <Link to={`/`} className="flex justify-center items-center space-x-3 text-sm">
         <div className="w-8 h-8 rounded-full">
