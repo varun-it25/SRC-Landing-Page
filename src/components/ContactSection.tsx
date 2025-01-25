@@ -51,7 +51,7 @@ const AboutSection = () => {
               <p className="font-semibold text-zinc-600 text-xs">Message</p>
               <Textarea rows={4} placeholder="Write your message here" />
             </div>
-            <Button className="bg-blue-600"><SendHorizonal /> Send Message</Button>
+            <Button><SendHorizonal /> Send Message</Button>
           </div>
 
         </div>
