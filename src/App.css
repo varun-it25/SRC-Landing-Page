@@ -1,0 +1,35 @@
+.HamIcon{
+    display: none;
+}
+
+.ProfileIcon{
+    display: flex;
+}
+
+.Left{
+    width: 17rem;
+}
+
+.Feedback-Chart{
+    display: flex;
+    flex-direction: row;
+}
+
+.Gallery-parent{
+    columns: 300px;
+}
+
+@media screen and (max-width: 640px) {
+    .Feedback-Chart{
+        flex-direction: column;
+    }
+    .HamIcon{
+        display: block;
+    }        
+    .ProfileIcon{
+        display: none;
+    }
+    .Left{
+        display: none;
+    }
+}
