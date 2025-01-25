@@ -6,8 +6,8 @@ const HeroSection = () => {
   return (
     <section className='flex-col flex-col-reverse justify-between items-center sm:flex-row flex space-x-6 px-5 md:px-20 sm:px-12 pt-7 sm:pt-8 pb-12 sm:pb-8'>
       <div className='w-full flex flex-col justify-center items-start pl-0 lg:pl-10'>
-        <p className='text-4xl whitespace-nowrap sm:whitespace-normal sm:text-5xl  w-full text-center font-medium text-zinc-500 mb-5'>Improve your <span className='font-bold text-zinc-600'>Focus</span></p>
-        <p className='text-3xl sm:text-5xl font-medium text-zinc-600 mb-7 w-full text-center'>Find your <span className='font-bold text-blue-600'>Peace</span></p>
+        <p className='text-3xl whitespace-nowrap sm:whitespace-normal sm:text-5xl  w-full text-center font-medium text-zinc-500 mb-5'>Improve your <span className='font-bold text-zinc-600'>Focus</span></p>
+        <p className='text-4xl sm:text-5xl font-medium text-zinc-600 mb-7 w-full text-center'>Find your <span className='font-bold text-blue-600'>Peace</span></p>
         <p className='text-zinc-400 text-center xt-start text-sm mb-8'>Join Spiritual Research Cell to discover the power of mindfulness and inner peace. Transform your life and self-discovery.</p>
 
         <div className='flex justify-center fy-start space-x-5 w-full'>
