@@ -16,7 +16,7 @@ const EventSection = () => {
                 </div>
             </div>
             <div className="w-full relative mb-8 sm:mb-0">
-                <img className="w-full rounded-lg aspect-video object-cover border" src={`https://img.freepik.com/premium-photo/man-lotus-pose-which-is-posture-often-associated-with-spiritual-practices-meditation-he-is-kneeling-down-appears-be-state-meditation-deep-contemplation_251319-1078.jpg`} />
+                <img className="w-full rounded-lg aspect-square object-cover border" src={`https://img.freepik.com/premium-photo/man-lotus-pose-which-is-posture-often-associated-with-spiritual-practices-meditation-he-is-kneeling-down-appears-be-state-meditation-deep-contemplation_251319-1078.jpg`} />
                 <div className="px-6 text-white py-2 bg-opacity-50 rounded-b-lg absolute bg-black bottom-0 w-full flex justify-between items-center">
                     <div>
                       <p className="font-bold text-sm">{`Moon Meditaions`}</p>
