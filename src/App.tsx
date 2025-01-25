@@ -1,9 +1,10 @@
 import './App.css'
 import AboutSection from './components/AboutSection'
-import HeroSection from './components/HeroSectionOld'
+import HeroSection from './components/HeroSection'
 import EventSection from './components/TeamSection'
 import ContactSection from './components/ContactSection'
 import Navbar from './components/Navbar'
+import About from './components/About'
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <Navbar />
       <div className='flex-1 border-2 w-full'>
           <HeroSection />
-          <AboutSection />
+          <About />
           <EventSection />
           <ContactSection />
       </div>
