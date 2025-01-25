@@ -9,7 +9,7 @@ const AboutSection = () => {
         <div className="w-full px-4 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-12">
 
           <div className="w-full border relative flex flex-col justify-between items-center bg-red-600 rounded-lg">
-            <div className="text-white text-lg p-8 w-full">
+            <div className="text-white text-lg p-4 sm:p-8 w-full">
               <p className="text-[1.7rem] sm:text-3xl font-semibold pb-12 whitespace-nowrap">Contact Information</p>
               
               <div className="flex space-x-3 items-center pb-6">
