@@ -1,14 +1,14 @@
 import '@/App.css'
 import Navbar from '@/components/Navbar'
-import EventSection from '@/components/EventSection'
 import Footer from '@/components/Footer'
+import UpcomingEventSection from '@/components/UpcomingEventSection'
 
 const App = () => {
   return (
     <div className='w-screen h-screen flex flex-col overflow-auto'>
       <Navbar />
       <div className='flex-1 w-full'>
-        <EventSection />
+        <UpcomingEventSection />
       </div>
       <Footer />
     </div>

@@ -19,7 +19,7 @@
     columns: 300px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 815px) {
     .Feedback-Chart{
         flex-direction: column;
     }

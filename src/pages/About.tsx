@@ -1,6 +1,6 @@
 import '@/App.css'
 import Navbar from '@/components/Navbar'
-import EventSection from '@/components/EventSection'
+import About from '@/components/AboutSection'
 import Footer from '@/components/Footer'
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <div className='w-screen h-screen flex flex-col overflow-auto'>
       <Navbar />
       <div className='flex-1 w-full'>
-        <EventSection />
+          <About />
       </div>
       <Footer />
     </div>
