@@ -18,7 +18,7 @@ const Register = () => {
   const [banner, setBanner] = useState(``)
   const nav = useNavigate()
 
-  let isValidForm = firstName && lastName && RtuRollNo && collegeEmail && personalEmail && mobileNo;
+  let isValidForm = !(firstName && lastName && RtuRollNo && collegeEmail && personalEmail && mobileNo);
 
   useEffect(()=>{
     async function fetchBanner(){
@@ -98,7 +98,7 @@ const Register = () => {
                 </div>
             </div>
             <div className='w-full flex justify-start mb-5 sm:mb-0'>
-                <Button className='px-10' onClick={submit} disabled={!isValidForm}>Submit</Button>
+                <Button className='px-10' onClick={submit} disabled={isValidForm}>Submit</Button>
             </div>
           </section>
       </div>
