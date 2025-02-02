@@ -7,7 +7,6 @@ import Events from './pages/Events'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import UpcomingEvent from './pages/Upcoming-Event'
-import Participate from './pages/Participate'
 import Register from './pages/Register'
 import Feedback from './pages/Feedback'
 import Activities from './pages/Activities'
@@ -18,7 +17,6 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path='/' element={<App />}/>
           <Route path='/events' element={<Events />}/>
-          <Route path='/participate/:id' element={<Participate />}/>
           <Route path='/register/:id' element={<Register />}/>
           <Route path='/feedback/:id' element={<Feedback />}/>
           <Route path='/upcoming-events' element={<UpcomingEvent />}/>
