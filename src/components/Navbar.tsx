@@ -10,9 +10,9 @@ import logo from "@/assets/src.jpg"
 const menuItems = [
   { name: "Home", icon: Home, path: "/" },
   { name: "About Us", icon: Book, path: "/about" },
-  { name: "Events", icon: Calendar, path: "/events" },
+  { name: "Upcoming Events", icon: Calendar, path: "/upcoming-events" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
-  { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
+  // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
 ]
 
 const Navbar = () => {
@@ -50,8 +50,8 @@ const Navbar = () => {
       </div>
 
       {/* Upcoming Events Button */}
-      <Link to={`/upcoming-events`}>
-        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Upcoming Events</Button>
+      <Link to={`/activities`}>
+        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Activities</Button>
       </Link>
 
       {/* Hamburger */}

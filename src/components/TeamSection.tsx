@@ -2,8 +2,8 @@ import { memberData } from "@/data/members"
 
 const TeamSection = () => {
   return (
-    <section className="pt-12 pb-12 sm:pb-20 bg-blue-50">
-        <p className='text-3xl mb-6 sm:mb-12 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>Our <span className='font text-blue-600'>Team</span></p>
+    <section className="pt-12 pb-12 min-h-[90vh] sm:pb-20 bg-blue-50">
+        <p className='text-3xl mb-8 sm:mb-14 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>Our <span className='font text-blue-600'>Team</span></p>
         <div className="w-full px-8 sm:px-28 grid grid-cols-1 sm:grid-cols-4 gap-0 sm:gap-12">
             {
                 memberData.map(({memberId, name, desination, image }) => {

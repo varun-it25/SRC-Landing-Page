@@ -5,7 +5,7 @@ import { Textarea } from "./ui/textarea"
 
 const AboutSection = () => {
   return (
-    <section className="pt-10 sm:pt-12 pb-8 sm:pb-12">
+    <section className="pt-10 h-fit sm:h-[90vh] sm:pt-20 pb-8 sm:pb-12">
         <div className="w-full px-4 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-12">
 
           <div className="w-full border relative flex flex-col justify-between items-center bg-blue-600 rounded-lg">
@@ -51,7 +51,7 @@ const AboutSection = () => {
               <p className="font-semibold text-zinc-600 text-xs">Message</p>
               <Textarea rows={4} placeholder="Write your message here" />
             </div>
-            <Button><SendHorizonal /> Send Message</Button>
+            <Button className="bg-red-600"><SendHorizonal /> Send Message</Button>
           </div>
 
         </div>

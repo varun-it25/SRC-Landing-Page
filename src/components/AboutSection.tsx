@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className='flex-col bg-blue-50 justify-between items-center sm:flex-row flex space-x-6 px-5 md:px-20 sm:px-12 py-7 sm:py-12'>
+    <section className='flex-col bg-blue-50 h-fit sm:h-[90vh] justify-between items-center sm:flex-row flex space-x-6 px-5 md:px-20 sm:px-12 py-7 sm:py-12'>
       <p className='text-4xl block sm:hidden whitespace-nowrap sm:whitespace-normal sm:text-5xl font-medium text-blue-500 mb-8'>About <span className='font text-zinc-600'>SRC</span></p>
       
       <div className='w-full mb-6 sm:mb-0'>
