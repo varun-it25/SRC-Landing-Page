@@ -10,11 +10,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const Feedback = () => {
   const { id } = useParams()
-  const [banner, setBanner] = useState(``)
-  const [fullName, setFullName] = useState(``)
-  const [RtuRollNo, setRtuRollNo] = useState(``)
-  const [mobileNo, setMobileNo] = useState(``)
-  const [experience, setExperience] = useState(``)
+  const [banner, setBanner] = useState('')
+  const [fullName, setFullName] = useState('')
+  const [RtuRollNo, setRtuRollNo] = useState('')
+  const [mobileNo, setMobileNo] = useState('')
+  const [experience, setExperience] = useState('')
   const nav = useNavigate()
 
   let isValidForm = !(fullName &&  RtuRollNo && experience && mobileNo);
@@ -32,16 +32,8 @@ const Feedback = () => {
   },[])
 
   async function submit(){
-    const formData = {
-        event_id: id,
-        name: fullName,
-        rtu_roll_no: RtuRollNo,
-        mobile_no: mobileNo,
-        experience        
-    }
-
     try{
-        await axios.post(`${backendUrl}/add-feedback`, formData)
+        await axios.post(`${backendUrl}/add-feedback`, { event_id: id, name: fullName, rtu_roll_no: RtuRollNo, mobile_no: mobileNo, experience: experience })
     } catch(err){
         console.log({error: err})
     }
@@ -77,15 +69,15 @@ const Feedback = () => {
 
                     <div className='space-y-3'>
                         <p className='text-sm font-medium text-zinc-800 flex items-center space-x-3'><ScanFace size={18} /><span>Rate your experience</span></p>
-                        <Select value={experience} onValueChange={value => setExperience(value)}>
+                        <Select value={experience} onValueChange={(value) => setExperience(value)}>
                             <SelectTrigger className="w-full">
                                 <SelectValue placeholder="Select here" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="Super Admin" className='text-green-500'>Amazing</SelectItem>
-                              <SelectItem value="Moderator" className='text-blue-500'>Very Good</SelectItem>
-                              <SelectItem value="Admin" className='text-purple-500'>Good</SelectItem>
-                              <SelectItem value="Editor" className='text-red-500'>Bad</SelectItem>
+                              <SelectItem value="Amazing" className='text-green-500'>Amazing</SelectItem>
+                              <SelectItem value="Very Good" className='text-blue-500'>Very Good</SelectItem>
+                              <SelectItem value="Good" className='text-purple-500'>Good</SelectItem>
+                              <SelectItem value="Bad" className='text-red-500'>Bad</SelectItem>
                             </SelectContent>
                         </Select>
                     </div> 
