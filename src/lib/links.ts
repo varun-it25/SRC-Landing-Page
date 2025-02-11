@@ -1,1 +1,1 @@
-export const backendUrl = "https://src-server.onrender.com"
+export const backendUrl = "https://src-server-production.up.railway.app"
