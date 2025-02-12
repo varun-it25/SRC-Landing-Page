@@ -12,6 +12,7 @@ const menuItems = [
   { name: "About Us", icon: Book, path: "/about" },
   { name: "Upcoming Events", icon: Calendar, path: "/upcoming-events" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
+  { name: "Activities", path:"/activities"}
   // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
 ]
 
@@ -40,7 +41,7 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <div className="flex-1 hidden sm:flex justify-center items-center text-sm space-x-4">
-        {menuItems.slice(0, 4).map((item) => (
+        {menuItems.slice(0, 5).map((item) => (
           <Link key={item.name} to={item.path} className="font-medium">
             <div className={`pb-[0.2rem] ${isActive(item.path) ? "border-b-2 border-blue-600" : ""} font-semibold px-2`}>
               {item.name}
@@ -50,9 +51,11 @@ const Navbar = () => {
       </div>
 
       {/* Upcoming Events Button */}
-      <Link to={`/activities`}>
-        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Activities</Button>
-      </Link>
+      
+      <a href='https://varun-src-app.vercel.app/'>
+        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Login</Button>
+        </a>
+      
 
       {/* Hamburger */}
       <div className="sm:hidden">
