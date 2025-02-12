@@ -2,6 +2,7 @@ import '@/App.css'
 import Navbar from '@/components/Navbar'
 import About from '@/components/AboutSection'
 import Footer from '@/components/Footer'
+import AboutGalary from '@/components/AboutGalary'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <div className='flex-1 w-full'>
           <About />
+          <AboutGalary />
       </div>
       <Footer />
     </div>
