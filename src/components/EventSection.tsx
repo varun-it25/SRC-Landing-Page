@@ -1,4 +1,3 @@
-import { eventData } from "@/data/eventCard"
 import { Button } from "./ui/button"
 import { CalendarRange, Clock, MapPin } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -60,11 +59,12 @@ const EventSection = () => {
     <section className="pt-10 sm:pt-12 pb-8 sm:pb-20">
         <p className='text-3xl mb-10 sm:mb-14 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>SRC <span className='font text-blue-600'>Events</span></p>
         <div className="w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-12">
-          {
+          <Event key={`nilju8uk`} evendId={`kjbkvj`} eventName={`jbubjyvv`} eventBanner={`jbvj`}  guestImg={`jbvcyjf`} eventDate={`vjy`} eventGuest={`v vjmn`} eventTime={`vkjvjkjv`} eventVenue={`jv vjvk,j,m`} />                        
+          {/* {
               eventData.map(({ evendId, eventBanner, eventName, eventDate, eventTime, eventVenue, eventGuest, guestImg }) => {
-                return <Event key={evendId} evendId={evendId} eventName={eventName} eventBanner={eventBanner}  guestImg={guestImg} eventDate={eventDate} eventGuest={eventGuest} eventTime={eventTime} eventVenue={eventVenue} />                        
+                return 
               })
-          }
+          } */}
         </div>
     </section>
   )

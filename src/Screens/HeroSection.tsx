@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Button } from './ui/button'
+import { Button } from '../components/ui/button'
 import Banner_Image from '@/assets/Banner_Image.png'
 
 const HeroSection = () => {

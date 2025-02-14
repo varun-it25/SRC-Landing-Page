@@ -10,6 +10,7 @@ import UpcomingEvent from './pages/Upcoming-Event'
 import Register from './pages/Register'
 import Feedback from './pages/Feedback'
 import Activities from './pages/Activities'
+import Not_found from './pages/Not-Found'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/activities' element={<Activities />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='*' element={<Not_found />}/>
         </Routes>
     </BrowserRouter>
   </StrictMode>,

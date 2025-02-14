@@ -54,7 +54,7 @@ const Navbar = () => {
       
       <a href='https://varun-src-app.vercel.app/'>
         <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Login</Button>
-        </a>
+      </a>
       
 
       {/* Hamburger */}
