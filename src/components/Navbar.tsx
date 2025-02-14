@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useLocation, Link } from "react-router-dom"
-import { Book, BookPlus, Calendar, CalendarClock, ChevronRight, Home, MenuIcon } from "lucide-react"
+import { Book, BookPlus, Calendar, CalendarClock, ChevronRight, Home, LayoutDashboard, MenuIcon } from "lucide-react"
 import { Button } from "./ui/button"
 import { Drawer } from "@mui/material"
 import { Separator } from "./ui/separator"
@@ -12,7 +12,7 @@ const menuItems = [
   { name: "About Us", icon: Book, path: "/about" },
   { name: "Upcoming Events", icon: Calendar, path: "/upcoming-events" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
-  { name: "Activities", path:"/activities"}
+  { name: "Activities", icon: LayoutDashboard , path:"/activities"}
   // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
 ]
 
