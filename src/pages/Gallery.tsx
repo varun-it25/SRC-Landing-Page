@@ -9,7 +9,7 @@ const Gallery = () => {
         <section className="min-h-[90vh]">
           <p className='text-3xl pt-10 sm:pt-10 pb-12 sm:pb-10 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>SRC <span className='font text-blue-600'>Gallery</span></p>
           <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4 mb-4`}>
-            <div className={'w-full aspect-video h-full'}>
+            <div className={'w-full aspect-video h-full bg-zinc-200'}>
               <img className='w-full h-full rounded-xl' src='https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' />
             </div>
             <div className={'w-full aspect-video grid  grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4'}>
