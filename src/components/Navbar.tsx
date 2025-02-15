@@ -10,7 +10,6 @@ import logo from "@/assets/src.jpg"
 const menuItems = [
   { name: "Home", icon: Home, path: "/" },
   { name: "About Us", icon: Book, path: "/about" },
-  { name: "Gallery  ", icon: Calendar, path: "/upcoming-events" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
   { name: "Activities", icon: LayoutDashboard , path:"/activities"},
   { name: "Gallery", icon: Image , path:"/gallery"},
