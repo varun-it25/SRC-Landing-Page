@@ -14,7 +14,7 @@ const AboutSection = () => {
               
               <div className="flex space-x-3 items-center pb-6">
                 <Phone size={20} />
-                <p>+91 9257307752</p>
+                <p>+91 9982682431</p>
               </div>
               <div className="flex space-x-4 items-center pb-6">
                 <Mail size={20} />

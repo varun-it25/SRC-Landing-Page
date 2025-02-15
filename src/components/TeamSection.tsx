@@ -12,8 +12,8 @@ const TeamSection = () => {
                 <div className="relative">
                     <img src={arpit_sir} className="w-52 object-cover ml-4" />
                     <div className="flex px-6 bg-black bg-opacity-20 py-3 rounded-bl rounded-tr absolute bottom-0 flex-col text-white">
-                        <p className="text-xl font-semibold">Arpit Agarwal</p>
-                        <p className="text-sm">(Director of JECRC)</p>
+                        <p className="text-xl font-semibold">Shri Arpit Agarwal</p>
+                        <p className="text-sm">Director, JECRC</p>
                     </div>
                 </div>
             </div>
@@ -22,8 +22,8 @@ const TeamSection = () => {
                 <div className="relative">
                     <img src={mukesh_sir} className="w-[15rem] object-cover ml-8 mt-4" />
                     <div className="flex px-6 bg-black bg-opacity-20 py-3 rounded-bl rounded-tr absolute bottom-0 flex-col text-white">
-                        <p className="text-xl font-semibold">Mukesh Agarwal</p>
-                        <p className="text-sm">(Head of SRC)</p>
+                        <p className="text-xl font-semibold">Prof. Mukesh Agarwal</p>
+                        <p className="text-sm">Head, SRC</p>
                     </div>
                 </div>
             </div>
@@ -32,8 +32,8 @@ const TeamSection = () => {
                 <div className="relative">
                     <img src={chitra_mam} className="w-[17rem] object-cover ml-4" />
                     <div className="flex px-6 bg-black bg-opacity-20 py-3 rounded-bl rounded-tr absolute bottom-0 flex-col text-white">
-                        <p className="text-xl font-semibold">Chitra Khandelwal</p>
-                        <p className="text-sm">(Concellor of SRC)</p>
+                        <p className="text-xl font-semibold">Miss Chitra Khandelwal</p>
+                        <p className="text-sm">Counsellor, SRC</p>
                     </div>
                 </div>
             </div>
