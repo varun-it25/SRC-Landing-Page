@@ -8,11 +8,11 @@ const Gallery = () => {
       <div className='flex-1 w-full'>
         <section className="min-h-[90vh]">
           <p className='text-3xl pt-10 sm:pt-10 pb-12 sm:pb-10 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>SRC <span className='font text-blue-600'>Gallery</span></p>
-          <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4`}>
+          <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4 mb-4`}>
             <div className={'w-full aspect-video h-full'}>
               <img className='w-full h-full rounded-xl' src='https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' />
             </div>
-            <div className={'w-full aspect-video grid  grid-cols-1 sm:grid-cols-2 gap-4'}>
+            <div className={'w-full aspect-video grid  grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4'}>
               <div className='w-full rounded-lg aspect-video bg-zinc-200'>
                   <img className='w-full h-full rounded-xl' src='https://images.pexels.com/photos/433452/pexels-photo-433452.jpeg?cs=srgb&dl=pexels-pixabay-433452.jpg&fm=jpg' />
               </div>
@@ -27,7 +27,7 @@ const Gallery = () => {
               </div>
             </div>
         </div>
-        <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12`}>
+        <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 mb-12`}>
             <div className={'w-full aspect-video bg-zinc-200 rounded-xl'}>
               <img className='w-full h-full rounded-xl' src='https://nvpmart.in/wp-content/uploads/2023/02/EventManagement.jpg' />
             </div>
