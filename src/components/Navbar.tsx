@@ -10,7 +10,7 @@ import logo from "@/assets/src.jpg"
 const menuItems = [
   { name: "Home", icon: Home, path: "/" },
   { name: "About Us", icon: Book, path: "/about" },
-  { name: "Upcoming Events", icon: Calendar, path: "/upcoming-events" },
+  { name: "Gallery  ", icon: Calendar, path: "/upcoming-events" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
   { name: "Activities", icon: LayoutDashboard , path:"/activities"}
   // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
@@ -52,15 +52,15 @@ const Navbar = () => {
 
       {/* Upcoming Events Button */}
       
-      <a href='https://varun-src-app.vercel.app/'>
-        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Login</Button>
+      <a href='https://varun-src-home.vercel.app/upcoming-events'>
+        <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Upcoming Events</Button>
       </a>
       
 
       {/* Hamburger */}
       <div className="sm:hidden">
         <Button variant="outline" size="icon" onClick={handleDrawerToggle}>
-          <MenuIcon className="h-4 w-4" />
+          <MenuIcon className="h-4 w-4" />  
         </Button>
       </div>
 
