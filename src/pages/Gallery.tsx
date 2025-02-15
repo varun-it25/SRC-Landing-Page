@@ -49,13 +49,13 @@ const Gallery = () => {
             SRC <span className="font text-blue-600">Gallery</span>
           </p>
 
-          <div className="w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4 mb-4">
+          <div className="w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-5 mb-8 sm:mb-5">
             {res.length >= 5 && (
               <>
                 <div className="w-full aspect-video rounded-xl h-full bg-zinc-200">
                   <img className="w-full h-full rounded-xl" src={res[0].cloudinaryUrl} alt="Gallery image 1" />
                 </div>
-                <div className="w-full aspect-video grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-4">
+                <div className="w-full aspect-video grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-5">
                   {res.slice(1, 5).map((image, index) => (
                     <div key={index} className="w-full rounded-xl aspect-video bg-zinc-200">
                       <img className="w-full h-full rounded-xl" src={image.cloudinaryUrl} alt={`Gallery image ${index + 2}`} />
@@ -66,7 +66,7 @@ const Gallery = () => {
             )}
           </div>
 
-          <div className="w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 mb-12">
+          <div className="w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-5 mb-12">
             {res.length >= 8 && (
               <>
                 {res.slice(5, 8).map((image, index) => (
