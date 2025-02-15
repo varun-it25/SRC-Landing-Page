@@ -5,14 +5,15 @@ import { Button } from "./ui/button"
 import { Drawer } from "@mui/material"
 import { Separator } from "./ui/separator"
 
-import logo from "@/assets/src.jpg"
+import logo from "@/assets/new_logo.jpg"
 
 const menuItems = [
   { name: "Home", icon: Home, path: "/" },
+  { name: "Initiatives", icon: LayoutDashboard , path:"/activities"},
+  { name: "Gallery", icon: Image , path:"/gallery"},
   { name: "About Us", icon: Book, path: "/about" },
   { name: "Contact Us", icon: BookPlus, path: "/contact" },
-  { name: "Activities", icon: LayoutDashboard , path:"/activities"},
-  { name: "Gallery", icon: Image , path:"/gallery"},
+  
   // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
 ]
 
