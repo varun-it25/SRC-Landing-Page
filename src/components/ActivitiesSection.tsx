@@ -38,7 +38,7 @@ const ActivitiesSection = () => {
 
   return (
     <section className="pt-10 sm:pt-12 pb-8 sm:pb-20">
-        <p className='text-3xl mb-10 sm:mb-14 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>Our <span className='font text-blue-600'>Activities</span></p>
+        <p className='text-3xl mb-10 sm:mb-14 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center'>Our <span className='font text-blue-600'>Initiatives</span></p>
         <div className="w-full px-6 sm:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="w-full flex flex-col-reverse md:flex-col gap-8">
                 <div className="w-full gap-8 grid grid-cols-1 md:grid-cols-2">
