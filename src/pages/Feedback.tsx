@@ -4,9 +4,40 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { backendUrl } from '@/lib/links';
 import axios from 'axios';
-import { IdCard, Phone, ScanFace, User } from 'lucide-react';
+import { Home, IdCard, Loader2, Phone, RotateCw, ScanFace, User } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+
+
+const Loading = () => (
+  <div className="flex justify-center items-center h-full space-x-4">
+    <Loader2 size={40} className="animate-spin" />
+    <p>Feedback sending...</p>
+  </div>
+)
+
+const Success = () => (
+  <div className='w-full h-full flex justify-center items-center'>
+    <div className="w-80 sm:w-96 bg-green-200 text-center p-6 rounded-lg">
+      <p className="font-semibold text-xl">Feedback Send Successfully!</p>
+      <div className='flex space-x-2 justify-center items-center mt-4'>
+        <Link to={`/`}><Button size={`sm`} className='bg-white hover:bg-zinc-100 text-black px-5'><Home />Home</Button></Link>
+      </div>
+    </div>
+  </div>
+)
+
+const Error = ({ message }: {message: string}) => (
+  <div className='w-full h-full flex justify-center items-center'>
+    <div className="w-80 sm:w-96 bg-red-200 text-center p-6 rounded-lg">
+      <p className="font-semibold text-xl">{message}</p>
+      <div className='flex space-x-2 justify-center items-center mt-4'>
+        <Button size={`sm`} variant={`destructive`} className='px-5' onClick={() => window.location.reload()}><RotateCw />Try Again</Button>
+      </div>
+    </div>
+  </div>
+)
+
 
 const Feedback = () => {
   const { id } = useParams()
@@ -16,6 +47,10 @@ const Feedback = () => {
   const [mobileNo, setMobileNo] = useState('')
   const [experience, setExperience] = useState('')
   const nav = useNavigate()
+
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<'success' | 'error' | null>(null)
+  const [errorMessage, setErrorMessage] = useState('')
 
   let isValidForm = !(fullName &&  RtuRollNo && experience && mobileNo);
 
@@ -32,16 +67,32 @@ const Feedback = () => {
   },[])
 
   async function submit(){
+    setLoading(true)
+
     try{
-        await axios.post(`${backendUrl}/add-feedback`, { event_id: id, name: fullName, rtu_roll_no: RtuRollNo, mobile_no: mobileNo, experience: experience })
-    } catch(err){
-        console.log({error: err})
+      await axios.post(`${backendUrl}/add-feedback`, { event_id: id, name: fullName, rtu_roll_no: RtuRollNo, mobile_no: mobileNo, experience: experience })
+      setLoading(false)
+      setStatus(`success`)
+    }
+    
+    catch(err){
+      setLoading(false)
+      setStatus(`error`)
+      setErrorMessage('Feedback Failed. Please try again.')
     }
   }
 
   return (
     <div className='w-screen h-screen flex flex-col overflow-auto'>
-      <div className='flex-1 w-full p-4 sm:p-12'>
+    {
+        loading
+          ? (<Loading />)
+          :status === 'success'
+            ? (<Success />)
+            : status === 'error'
+              ? (<Error message={errorMessage} />)
+              : (
+                <div className='flex-1 w-full p-4 sm:p-12'>
           <section>
             <div className='w-full h-32 sm:h-40 mb-5 sm:mb-6 rounded-lg sm:rounded-xl'>
                 <img src={banner} className='w-full h-full object-cover rounded-lg' />
@@ -89,6 +140,8 @@ const Feedback = () => {
             </div>
           </section>
       </div>
+      )
+    }
     </div>
   )
 }
