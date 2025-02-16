@@ -1,5 +1,6 @@
 import tree from "@/assets/tree.png"
 import { Button } from "./ui/button"
+import { Link } from "react-router-dom";
 
 function ActivityCardVertical({ name, full_form, image, from, to }) {
     return (
@@ -9,7 +10,7 @@ function ActivityCardVertical({ name, full_form, image, from, to }) {
         <div className="mb-6">
           <img className="h-40 rounded-lg" src={image} alt={name} />
         </div>
-        <Button className="bg-white text-black hover:bg-zinc-100">See More</Button>
+        <Link to={"/activity-info"}><Button className="bg-white text-black hover:bg-zinc-100">See More</Button></Link>
       </div>
     );
   }
