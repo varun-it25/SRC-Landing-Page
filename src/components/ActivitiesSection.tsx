@@ -2,7 +2,7 @@ import tree from "@/assets/tree.png"
 import { Button } from "./ui/button"
 import { Link } from "react-router-dom";
 
-function ActivityCardVertical({ name, full_form, image, from, to }) {
+function ActivityCardVertical({ name, full_form, image, from, to, link }) {
     return (
       <div className={`w-full bg-gradient-to-t from-${from} to-${to} border rounded-lg text-white p-4`} style={{ background: `linear-gradient(to top, ${from}, ${to})` }}>
         <p className="text-xl">{name}</p>
@@ -10,12 +10,12 @@ function ActivityCardVertical({ name, full_form, image, from, to }) {
         <div className="mb-6">
           <img className="h-40 rounded-lg" src={image} alt={name} />
         </div>
-        <Link to={"/activity-info"}><Button className="bg-white text-black hover:bg-zinc-100">See More</Button></Link>
+        <Link to={`/activity/${link}`}><Button className="bg-white text-black hover:bg-zinc-100">See More</Button></Link>
       </div>
     );
   }
 
-function ActivityCardHorizontal({ name, full_form, image, from, to }) {
+function ActivityCardHorizontal({ name, full_form, image, from, to, link }) {
     return (
       <div className={`w-full bg-gradient-to-t gap-4 from-${from} to-${to} border items-center rounded-lg text-white flex justify-between p-4`}  style={{background: `linear-gradient(to top, ${from}, ${to})`}}>
             <div className="w-fit ml-[-0.6rem] md:ml-0">
@@ -24,7 +24,7 @@ function ActivityCardHorizontal({ name, full_form, image, from, to }) {
             <div className=" w-fit sm:w-1/2">
                 <p className="text-xl">{name}</p>
                 <p className="font-light mb-8">{full_form}</p>
-                <Button className="bg-white text-black hover:bg-zinc-100">See More</Button>
+                <Link to={`/activity/${link}`}><Button className="bg-white text-black hover:bg-zinc-100">See More</Button></Link>
             </div>
       </div>
     );
@@ -43,16 +43,16 @@ const ActivitiesSection = () => {
         <div className="w-full px-6 sm:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="w-full flex flex-col-reverse md:flex-col gap-8">
                 <div className="w-full gap-8 grid grid-cols-1 md:grid-cols-2">
-                    <ActivityCardVertical name={`FFJ`} full_form={`FruitFul Jaipur`} image={tree} from={`#73EC8B`} to={`#15B392`} />
-                    <ActivityCardVertical name={`UBA`} full_form={`Unnat Bharat Abhyan`} image={india} from={`#BE3144`} to={`#872341`} />
+                    <ActivityCardVertical name={`FFJ`} full_form={`FruitFul Jaipur`} image={tree} from={`#73EC8B`} to={`#15B392`} link={`ffj`}  />
+                    <ActivityCardVertical name={`UBA`} full_form={`Unnat Bharat Abhyan`} image={india} from={`#BE3144`} to={`#872341`} link={`uba`}/>
                 </div>
-                <ActivityCardHorizontal name={`TSP`} full_form={`Techno-Spiritual Projects`} image={technology} from={`#3572EF`} to={`#050C9C`} />
+                <ActivityCardHorizontal name={`TSP`} full_form={`Techno-Spiritual Projects`} image={technology} from={`#3572EF`} to={`#050C9C`} link={`tsp`} />
             </div>
             <div className="w-full flex flex-col gap-8">
-                <ActivityCardHorizontal name={`SRC`} full_form={`Spiritual Research Cell`} image={src} from={`#DF9755`} to={`#EB5A3C`} />
+                <ActivityCardHorizontal name={`SRC`} full_form={`Spiritual Research Cell`} image={src} from={`#DF9755`} to={`#EB5A3C`} link={`src`} />
                 <div className="w-full gap-8 grid grid-cols-1 md:grid-cols-2">
-                    <ActivityCardVertical name={`DD`} full_form={`Diverse Dialogue`} image={speak} from={`#73EC8B`} to={`#15B392`} />
-                    <ActivityCardVertical name={`FDP`} full_form={`Faculty Development Program`} image={faculty} from={`#BE3144`} to={`#872341`} />
+                    <ActivityCardVertical name={`DD`} full_form={`Diverse Dialogue`} image={speak} from={`#73EC8B`} to={`#15B392`} link={`dd`} />
+                    <ActivityCardVertical name={`FDP`} full_form={`Faculty Development Program`} image={faculty} from={`#BE3144`} to={`#872341`} link={`fdp`} />
                 </div>
             </div>
         </div>
