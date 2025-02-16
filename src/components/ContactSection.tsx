@@ -1,6 +1,6 @@
 import { Button } from "./ui/button"
 import { Input } from "./ui/input"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, SendHorizonal } from "lucide-react"
+import { Youtube, Instagram, Linkedin, Mail, MapPin, Phone, SendHorizonal } from "lucide-react"
 import { Textarea } from "./ui/textarea"
 
 const AboutSection = () => {
@@ -22,20 +22,30 @@ const AboutSection = () => {
               </div>
               <div className="flex space-x-4 items-center pb-5">
                 <MapPin size={20} />
-                <p>Near Bh-1, JECRC</p>
+                <p>Jaipur Engineering College and Research Centre, Jaipur</p>
               </div>
             </div>
 
             <div className="px-6 pb-6 flex items-center w-full space-x-4">
+              
+              <a href= "https://www.instagram.com/spiritual_research_cell?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
                 <Instagram size={20} />
               </div>
+              </a>
+
+              <a href="https://youtube.com/@spiritualresearchcelljecrc?si=pEAX_OMQrxd6u7wO">
               <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
-                <Facebook size={18} />
+                <Youtube size={18} />
               </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/spiritual-research-cell-jecrc/">
               <div className="w-[2.4rem] shadow-md h-[2.4rem] flex justify-center items-center rounded-full bg-blue-500 hover:bg-white text-white hover:text-blue-500 cursor-pointer">
                 <Linkedin size={18} />
               </div>
+              </a>
+
             </div>
           </div>
           <div className="w-full px-2 sm:px-0 pt-8 sm:pt-5 py-2">
