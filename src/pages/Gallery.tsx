@@ -53,12 +53,12 @@ const Gallery = () => {
             {res.length >= 5 && (
               <>
                 <div className="w-full aspect-video rounded-xl h-full bg-zinc-200">
-                  <img className="w-full h-full rounded-xl" src={res[0].cloudinaryUrl} alt="Gallery image 1" />
+                  <img className="w-full h-full rounded-xl object-cover" src={res[0].cloudinaryUrl} alt="Gallery image 1" />
                 </div>
                 <div className="w-full aspect-video grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-5">
                   {res.slice(1, 5).map((image, index) => (
                     <div key={index} className="w-full rounded-xl aspect-video bg-zinc-200">
-                      <img className="w-full h-full rounded-xl" src={image.cloudinaryUrl} alt={`Gallery image ${index + 2}`} />
+                      <img className="w-full h-full rounded-xl object-cover" src={image.cloudinaryUrl} alt={`Gallery image ${index + 2}`} />
                     </div>
                   ))}
                 </div>
@@ -71,7 +71,7 @@ const Gallery = () => {
               <>
                 {res.slice(5, 8).map((image, index) => (
                   <div key={index} className="w-full aspect-video bg-zinc-200 rounded-xl">
-                    <img className="w-full h-full rounded-xl" src={image.cloudinaryUrl} alt={`Gallery image ${index + 6}`} />
+                    <img className="w-full h-full rounded-xl object-cover" src={image.cloudinaryUrl} alt={`Gallery image ${index + 6}`} />
                   </div>
                 ))}
               </>

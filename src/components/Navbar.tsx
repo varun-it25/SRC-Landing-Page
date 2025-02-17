@@ -12,9 +12,8 @@ const menuItems = [
   { name: "Initiatives", icon: LayoutDashboard , path:"/activities"},
   { name: "Gallery", icon: Image , path:"/gallery"},
   { name: "About Us", icon: Book, path: "/about" },
-  { name: "Contact Us", icon: BookPlus, path: "/contact" },
-  
-  // { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
+  { name: "Contact Us", icon: BookPlus, path: "/contact" },  
+  { name: "Upcoming Events", icon: CalendarClock, path: "/upcoming-events" },
 ]
 
 const Navbar = () => {
@@ -53,9 +52,9 @@ const Navbar = () => {
 
       {/* Upcoming Events Button */}
       
-      <a href='https://varun-src-home.vercel.app/upcoming-events'>
+      <Link to='/upcoming-events'>
         <Button size="sm" className="rounded-full px-6 hidden sm:inline-flex">Upcoming Events</Button>
-      </a>
+      </Link>
       
 
       {/* Hamburger */}
