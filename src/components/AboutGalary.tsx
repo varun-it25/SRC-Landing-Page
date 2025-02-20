@@ -4,67 +4,42 @@ import meditation from "@/assets/meditation_hall.jpg";
 
 const AboutGalary = () => {
   return (
-    <section className="flex-col bg-blue-50 h-fit sm:h-[90vh] justify-between items-center sm:flex-row flex space-x-6 px-5 md:px-20 sm:px-12 py-7 sm:py-12 mb-10">
-      <div className="grid md:grid-cols-3">
-        {/* Library */}
-        <div className="bg-orange-400 px-2 text-center flex flex-col justify-center items-center h-full">
-          <h2 className="text-3xl font-semibold">Spiritual Library</h2>
-          <br />
-          <p>
-            Bringing closer the self, the supreme, and the society, our
-            Spiritual Library is a sanctuary of wisdom and inspiration, filled
-            with self-help books which offer a peaceful space for reflection and
-            learning.
-          </p>
-        </div>
+    <section className="min-h-[90vh]">
+        <p className="text-3xl pt-10 sm:pt-10 pb-12 sm:pb-10 whitespace-nowrap sm:whitespace-normal sm:text-4xl font-medium text-zinc-600 text-center">SRC <span className="font text-blue-600">Tour</span></p>
 
-        {/* Image */}
-        <div>
-          <img
-            src={meditation}
-            alt="Learning Centre"
-            className="w-full h-70 object-cover"
-          />
-        </div>
+        <div className="w-full px-8 sm:px-24 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 pb-12">
+          <div className="space-y-8 sm:space-y-4 flex flex-col">
+              <div className="w-full aspect-video text-white bg-orange-400 rounded-xl flex flex-col justify-center items-center space-y-3 p-4">
+                <p className="text-2xl font-semibold">Spiritual Library</p>
+                <p className="text-sm text-center font-semibold">Bringing closer the self, the supreme, and the society, our Spiritual Library is a sanctuary of wisdom and inspiration, filled with self-help books which offer a peaceful space for reflection and learning.</p>
+              </div>
+              <div className="w-full aspect-video bg-zinc-200 rounded-xl">
+                <img src={library} className="w-full aspect-video object-cover rounded-xl" />
+              </div>
+          </div>
+          
+          <div className="space-y-8 sm:space-y-4">
+            <div className="w-full aspect-video bg-zinc-200 rounded-xl">
+              <img src={meditation} className="w-full aspect-video object-cover rounded-xl" />
+            </div>
+            <div className="w-full aspect-video text-white bg-blue-500 rounded-xl flex flex-col justify-center items-center space-y-3 p-4">
+              <p className="text-2xl font-semibold">Meditation Room</p>
+              <p className="text-sm text-center font-semibold">A place of great serenity and self-reflection where students can practice meditation in a peaceful and harmonious environment.</p>
+            </div>
+          </div>
 
-        {/* Meditation */}
-        <div className="bg-teal-400 px-2 text-center flex flex-col justify-center items-center h-full">
-          <h2 className="text-3xl font-semibold">Wisdom Hall</h2>
-          <br />
-          <p>
-            Combining virtue and wit, to ignite the brave leader in a student
-            where teaching become pearls of the ocean of knowledge.
-          </p>
-        </div>
+          <div className="space-y-8 sm:space-y-4">
+            <div className="w-full aspect-video text-white bg-green-500 rounded-xl flex flex-col justify-center items-center space-y-3 p-4">
+              <p className="text-2xl font-semibold">Wisdom Hall</p>
+              <p className="text-sm text-center font-semibold">Combining virtue and wit, to ignite the brave leader in a student where teaching become pearls of the ocean of knowledge.</p>
+            </div>
+            <div className="w-full aspect-video bg-zinc-200 rounded-xl">
+              <img src={wisdom} className="w-full aspect-video object-cover rounded-xl" />
+            </div>
+          </div>
 
-        {/* Meditation Image */}
-        <div>
-          <img
-            src={library}
-            alt="Meditation"
-            className="w-full h-70 object-cover"
-          />
-        </div>
 
-        {/* Other Facilities */}
-        <div className="bg-cyan-400 px-2 text-center flex flex-col justify-center items-center h-full">
-          <h2 className="text-3xl font-semibold">Meditation Room</h2>
-          <br />
-          <p>
-            A place of great serenity and self-reflection where students can
-            practice meditation in a peaceful and harmonious environment.
-          </p>
-        </div>
-
-        {/* Facilities Image */}
-        <div>
-          <img
-            src={wisdom}
-            alt="Other Facilities"
-            className="w-full h-70 object-cover"
-          />
-        </div>
-      </div>
+        </div>         
     </section>
   );
 };
