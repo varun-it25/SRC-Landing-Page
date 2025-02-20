@@ -7,6 +7,7 @@ import About from '@/components/AboutSection'
 import Events from '@/components/UpcomingEventSection'
 import Footer from '@/components/Footer'
 import AboutGalary from '@/components/AboutGalary'
+import RecentVideos from '@/components/RecentVideos'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <About />
           <AboutGalary />
           <Events />
+          <RecentVideos/>
           <TeamSection />
           <ContactSection />
           <Footer />
