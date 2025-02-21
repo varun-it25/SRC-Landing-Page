@@ -83,7 +83,7 @@ const EventSection = () => {
         }
         {
           !isLoad && events.length === 0
-            ? <div className="w-full mt-4 h-96 sm:h-80 bg-red-50 flex justify-center items-center text-xl sm:text-2xl text-red-500 font-semibold">There is no upcoming events.</div>
+            ? <div className="w-full mt-4 h-96 sm:h-80 bg-red-100 flex justify-center items-center text-xl sm:text-2xl text-red-500 font-semibold">There is no upcoming events.</div>
             : (
               <div className={`w-full px-6 sm:px-28 grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-12`}>
                 {
