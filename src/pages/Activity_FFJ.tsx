@@ -3,14 +3,17 @@ import Navbar from "@/components/Navbar";
 import ffj1 from "@/assets/ffj1.jpg";
 import ffj2 from "@/assets/ffj2.jpg";
 import ffj3 from "@/assets/ffj3.jpg";
-import ffj_logo from '@/assets/ffj_logo.jpg'
+import ffj_logo from '@/assets/ffj_logo.png';
+import banner from '@/assets/banner.jpg'
 
 const Activity_FFJ = () => {
   return (
     <div className="w-screen h-screen flex flex-col overflow-auto">
       <Navbar />
       <div className="min-h-[90vh]">
-        <div className="w-full h-52 bg-zinc-300"></div>
+        <div className="w-full h-52 bg-zinc-300">
+        <img src = {banner} className =  'w-full h-52 bg-zinc-300 object-cover'></img>
+        </div>
         <div className="w-full relative top-[-3rem] rounded-t-[3rem] bg-white">
           <div className="w-full flex justify-center items-center relative top-[-2rem] flex-col space-y-3">
             <div className="w-20 aspect-square rounded-full border bg-white"><img src={ffj_logo} className='w-20 aspect-square object-contain rounded-full border'></img></div>
