@@ -1,6 +1,11 @@
-import tree from "@/assets/tree.png"
+import dd_logo from '@/assets/dd_logo.png'
+import src_nobg from '@/assets/src_nobg.png'
+import ffj_logo from '@/assets/ffj_logo.png'
+import girl_home from '@/assets/girl_home.png'
+import uba_logo from '@/assets/uba_logo.png'
 import { Button } from "./ui/button"
 import { Link } from "react-router-dom";
+
 
 function ActivityCardVertical({ name, full_form, image, from, to, link }) {
     return (
@@ -43,16 +48,16 @@ const ActivitiesSection = () => {
         <div className="w-full px-6 sm:px-24 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="w-full flex flex-col-reverse md:flex-col gap-8">
                 <div className="w-full gap-8 grid grid-cols-1 md:grid-cols-2">
-                    <ActivityCardVertical name={`FFJ`} full_form={`FruitFul Jaipur`} image={tree} from={`#73EC8B`} to={`#15B392`} link={`ffj`}  />
-                    <ActivityCardVertical name={`UBA`} full_form={`Unnat Bharat Abhyan`} image={india} from={`#BE3144`} to={`#872341`} link={`uba`}/>
+                    <ActivityCardVertical name={`FFJ`} full_form={`FruitFul Jaipur`} image={ffj_logo} from={`#73EC8B`} to={`#15B392`} link={`ffj`}  />
+                    <ActivityCardVertical name={`UBA`} full_form={`Unnat Bharat Abhyan`} image={uba_logo} from={`#BE3144`} to={`#872341`} link={`uba`}/>
                 </div>
-                <ActivityCardHorizontal name={`TSP`} full_form={`Techno-Spiritual Projects`} image={technology} from={`#3572EF`} to={`#050C9C`} link={`tsp`} />
+                <ActivityCardHorizontal name={`TSP`} full_form={`Techno Spiritual Projects`} image={technology} from={`#3572EF`} to={`#050C9C`} link={`tsp`} />
             </div>
             <div className="w-full flex flex-col gap-8">
-                <ActivityCardHorizontal name={`SRC`} full_form={`Spiritual Research Cell`} image={src} from={`#DF9755`} to={`#EB5A3C`} link={`src`} />
+                <ActivityCardHorizontal name={`Counseling`} full_form={``} image={src_nobg} from={`#DF9755`} to={`#EB5A3C`} link={`src`} />
                 <div className="w-full gap-8 grid grid-cols-1 md:grid-cols-2">
-                    <ActivityCardVertical name={`DD`} full_form={`Diverse Dialogue`} image={speak} from={`#73EC8B`} to={`#15B392`} link={`dd`} />
-                    <ActivityCardVertical name={`FDP`} full_form={`Faculty Development Program`} image={faculty} from={`#BE3144`} to={`#872341`} link={`fdp`} />
+                    <ActivityCardVertical name={`DD`} full_form={`Diverse Dialogue`} image={dd_logo} from={`#73EC8B`} to={`#15B392`} link={`dd`} />
+                    <ActivityCardVertical name={`Meditation`} full_form={`Peace of Mind`} image={girl_home} from={`#BE3144`} to={`#872341`} link={`fdp`} />
                 </div>
             </div>
         </div>
