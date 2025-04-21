@@ -7,7 +7,7 @@ import { Button } from "./ui/button"
 import { Link } from "react-router-dom";
 
 
-function ActivityCardVertical({ name, full_form, image, from, to, link }) {
+function ActivityCardVertical({ name, full_form, image, from, to, link }: {name: string, full_form: string, image: string, from: string, to: string, link: string}) {
     return (
       <div className={`w-full bg-gradient-to-t from-${from} to-${to} border rounded-lg text-white p-4`} style={{ background: `linear-gradient(to top, ${from}, ${to})` }}>
         <p className="text-xl">{name}</p>
@@ -20,7 +20,7 @@ function ActivityCardVertical({ name, full_form, image, from, to, link }) {
     );
   }
 
-function ActivityCardHorizontal({ name, full_form, image, from, to, link }) {
+function ActivityCardHorizontal({ name, full_form, image, from, to, link }: {name: string, full_form: string, image: string, from: string, to: string, link: string}) {
     return (
       <div className={`w-full bg-gradient-to-t gap-4 from-${from} to-${to} border items-center rounded-lg text-white flex justify-between p-4`}  style={{background: `linear-gradient(to top, ${from}, ${to})`}}>
             <div className="w-fit ml-[-0.6rem] md:ml-0">
@@ -36,11 +36,11 @@ function ActivityCardHorizontal({ name, full_form, image, from, to, link }) {
   }
 
 const ActivitiesSection = () => {
-  const india = `https://static.vecteezy.com/system/resources/previews/011/298/961/non_2x/india-map-water-color-illustration-styles-isolated-on-white-background-free-png.png`
+  // const india = `https://static.vecteezy.com/system/resources/previews/011/298/961/non_2x/india-map-water-color-illustration-styles-isolated-on-white-background-free-png.png`
   const technology = `https://movate-website-data.s3.ap-south-1.amazonaws.com/wp-content/uploads/2024/08/13100059/elevate-cloud.webp`
-  const src = `https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-spiritual-clipart-jaya-vector-png-image_6816926.png`
-  const speak = `https://media.licdn.com/dms/image/v2/D5612AQEOmKhfDaDofQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1666111443352?e=2147483647&v=beta&t=6BzvSn63T7YJrWEsc3GhtxQ4AiGe-BvPwxxpQ-ZNa3Q`
-  const faculty = `https://static.vecteezy.com/system/resources/previews/023/254/079/non_2x/smiling-male-teacher-character-pointing-free-png.png`
+  // const src = `https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-spiritual-clipart-jaya-vector-png-image_6816926.png`
+  // const speak = `https://media.licdn.com/dms/image/v2/D5612AQEOmKhfDaDofQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1666111443352?e=2147483647&v=beta&t=6BzvSn63T7YJrWEsc3GhtxQ4AiGe-BvPwxxpQ-ZNa3Q`
+  // const faculty = `https://static.vecteezy.com/system/resources/previews/023/254/079/non_2x/smiling-male-teacher-character-pointing-free-png.png`
 
   return (
     <section className="pt-10 sm:pt-12 pb-8 sm:pb-20">

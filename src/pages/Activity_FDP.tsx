@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import meditation_1 from "@/assets/meditation_1.jpg";
 import meditation_2 from "@/assets/meditation_2.jpg";
 import meditation_3 from "@/assets/meditation_3.jpg";
-import medi_logo from "@/assets/meditation_logo.png";
 import banner from "@/assets/banner.jpg";
 import girl_home from "@/assets/girl_home.png";
 

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useLocation, Link } from "react-router-dom"
-import { Book, BookPlus, Calendar, CalendarClock, ChevronRight, Home, Image, LayoutDashboard, MenuIcon } from "lucide-react"
+import { Book, BookPlus, CalendarClock, ChevronRight, Home, Image, LayoutDashboard, MenuIcon } from "lucide-react"
 import { Button } from "./ui/button"
 import { Drawer } from "@mui/material"
 import { Separator } from "./ui/separator"
