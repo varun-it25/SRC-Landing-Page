@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { backendUrl } from '@/lib/links'
 import axios from 'axios'
+import { SaveOff } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const Gallery = () => {
@@ -26,16 +27,23 @@ const Gallery = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-xl">Loading...</p>
+      <div className="w-screen h-screen flex flex-col overflow-auto">
+        <Navbar />
+        <div className='flex-1 flex flex-col items-center justify-center'>
+            <p className="text-xl pb-12">Loading...</p>
+        </div>
       </div>
     )
   }
 
   if (error) {
     return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-xl text-red-500">{error}</p>
+      <div className="w-screen h-screen flex flex-col overflow-auto">
+        <Navbar />
+        <div className='flex-1 flex flex-col items-center space-y-2 justify-center'>
+            <SaveOff size={60} className='text-zinc-300' />
+            <p className='text-zinc-600 text-lg font-medium pb-12'>Gallery has been empty.</p>
+        </div>
       </div>
     )
   }
