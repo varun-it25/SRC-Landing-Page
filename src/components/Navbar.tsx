@@ -34,8 +34,8 @@ const Navbar = () => {
           <img src={logo || "/placeholder.svg"} alt="SRC Logo" className="w-full h-full rounded-full" />
         </div>
         <div className="whitespace-nowrap flex items-center">
-          <p className="text-black text-lg sm:text-base font-semibold">SRC</p>
-          <span className="font-semibold text-zinc-500 pl-2 hidden sm:inline">- Spiritual Research Cell</span>
+          <p className="text-black text-lg sm:text-base font-semibold">Spiritual Research Cell</p>
+          {/* <span className="font-semibold text-zinc-500 pl-2 hidden sm:inline">- Spiritual Research Cell</span> */}
         </div>
       </Link>
 
