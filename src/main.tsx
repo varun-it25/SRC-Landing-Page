@@ -18,6 +18,7 @@ import Activity_FFJ from './pages/Activity_FFJ'
 import Activity_SRC from './pages/Activity_SRC'
 import Activity_UBA from './pages/Activity_UBA'
 import Activity_FDP from './pages/Activity_FDP'
+import Enlightenment from './pages/Enlightenment'
 
 
 
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/gallery' element={<Gallery />}/>
           <Route path='/about' element={<About />}/>
           <Route path='*' element={<Not_found />}/>
+          <Route path='/enlightenment' element={<Enlightenment />}/>
         </Routes>
     </BrowserRouter>
   </StrictMode>,
