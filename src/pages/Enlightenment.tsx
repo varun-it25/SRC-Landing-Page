@@ -57,7 +57,7 @@ const sessions: Session[] = [
     id: 1,
     title: "Power of Thoughts",
     date: "26 Dec, 2025",
-    time: "6:00 AM - 7:30 AM",
+    time: "6:00 PM - 7:30 PM",
     speakerName: "Prof. Mukesh Agarwal",
     description: "Discover how your thoughts shape your reality. This session delves into the mechanism of the mind, teaching practical techniques to harness positive thinking for personal transformation and success.",
     flyer: flyer1
@@ -66,7 +66,7 @@ const sessions: Session[] = [
     id: 2,
     title: "Secrets of Mind",
     date: "27 Dec, 2025",
-    time: "6:00 AM - 7:30 AM",
+    time: "6:00 PM - 7:30 PM",
     speakerName: "Dr. Himanshu Goel",
     description: "Unlock the hidden potential of your subconscious. A scientific and spiritual approach to understanding mental patterns, emotional resilience, and the art of mastering your own consciousness.",
     flyer: flyer2
